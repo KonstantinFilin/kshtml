@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class KsHtml\Tag | kshtml</title>
+
+	<script type="text/javascript" src="resources/combined.js?394153670"></script>
+	<script type="text/javascript" src="elementlist.js?3461923084"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-KsHtml.html">KsHtml<span></span></a>
+						<ul>
+				<li><a href="namespace-KsHtml.Form.html">Form<span></span></a>
+						<ul>
+				<li><a href="namespace-KsHtml.Form.Element.html">Element</a>
+						</li>
+				<li><a href="namespace-KsHtml.Form.Renderer.html">Renderer</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-KsHtml.Form.html">Form</a></li>
+				<li class="active"><a href="class-KsHtml.Tag.html">Tag</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-KsHtml.html" title="Summary of KsHtml"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Tag</h1>
+
+
+	<div class="description">
+	
+<p>Opened or closed html tag</p>
+
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-KsHtml.Form.html">KsHtml\Form</a>, 
+			<a href="class-KsHtml.Form.Element.html">KsHtml\Form\Element</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-KsHtml.Form.Element.AbstractList.html">KsHtml\Form\Element\AbstractList</a>, 
+			<a href="class-KsHtml.Form.Element.Checkbox.html">KsHtml\Form\Element\Checkbox</a>, 
+			<a href="class-KsHtml.Form.Element.SelectAbstract.html">KsHtml\Form\Element\SelectAbstract</a>, 
+			<a href="class-KsHtml.Form.Element.String.html">KsHtml\Form\Element\String</a>, 
+			<a href="class-KsHtml.Form.Element.SubmitElement.html">KsHtml\Form\Element\SubmitElement</a>, 
+			<a href="class-KsHtml.Form.Element.Text.html">KsHtml\Form\Element\Text</a>, 
+			<a href="class-KsHtml.Form.Element.File.html">KsHtml\Form\Element\File</a>, 
+			<a href="class-KsHtml.Form.Element.Hidden.html">KsHtml\Form\Element\Hidden</a>, 
+			<a href="class-KsHtml.Form.Element.Int.html">KsHtml\Form\Element\Int</a>, 
+			<a href="class-KsHtml.Form.Element.MultiList.html">KsHtml\Form\Element\MultiList</a>, 
+			<a href="class-KsHtml.Form.Element.MultiSelect.html">KsHtml\Form\Element\MultiSelect</a>, 
+			<a href="class-KsHtml.Form.Element.Password.html">KsHtml\Form\Element\Password</a>, 
+			<a href="class-KsHtml.Form.Element.Radio.html">KsHtml\Form\Element\Radio</a>, 
+			<a href="class-KsHtml.Form.Element.Select.html">KsHtml\Form\Element\Select</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-KsHtml.html">KsHtml</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-KsHtml.Tag.html#5-265" title="Go to source code">src/Tag.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#51-62" title="Go to source code">__construct</a>( <span>string <var>$name</var></span>, <span>boolean <var>$hasClosingTag</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name Name of the tag</dd>
+					<dt><var>$hasClosingTag</var></dt>
+					<dd><code>boolean</code><br>$hasClosingTag If it needs closing tag. Default to false</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addClass" id="_addClass">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addClass">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#64-76" title="Go to source code">addClass</a>( <span>string <var>$cls</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a css class name to the class attribute</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a css class name to the class attribute</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cls</var></dt>
+					<dd><code>string</code><br>$cls New css class name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br>Current tag<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeClass" id="_removeClass">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeClass">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#78-91" title="Go to source code">removeClass</a>( <span>string <var>$cls</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Removes a css class name to the class attribute</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Removes a css class name to the class attribute</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cls</var></dt>
+					<dd><code>string</code><br>$cls Css class name to remove</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br>Current tag<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="disableEncodeContent" id="_disableEncodeContent">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_disableEncodeContent">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#93-101" title="Go to source code">disableEncodeContent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Disable replacement of special chars to its html entities. Needed when child
+tags used in content or when was made earlier</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Disable replacement of special chars to its html entities. Needed when child
+tags used in content or when was made earlier</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="disableValueEncoding" id="_disableValueEncoding">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_disableValueEncoding">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#103-110" title="Go to source code">disableValueEncoding</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAttr" id="_setAttr">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAttr">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#112-124" title="Go to source code">setAttr</a>( <span>String <var>$name</var></span>, <span>String <var>$value</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets attribute to the tag. If attribute exists its value will be overriden.
+If value is null, then only attribute's name will be printed ("readonly" instead
+of 'readonly="true"'</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets attribute to the tag. If attribute exists its value will be overriden.
+If value is null, then only attribute's name will be printed ("readonly" instead
+of 'readonly="true"'</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>String</code><br>$name Attribute's name, for example: "src"</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>String</code><br>$value Attribute's value, for example: "http://www.google.com/". Default value
+is null</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttr" id="_getAttr">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttr">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#126-134" title="Go to source code">getAttr</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns chosen attribute's value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns chosen attribute's value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name Attribute's name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br>Attribute's value or null if there are no such an attribute<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delAttr" id="_delAttr">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delAttr">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#136-144" title="Go to source code">delAttr</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Removes attribute from the tag</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Removes attribute from the tag</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name Attribute's name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAttrs" id="_setAttrs">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAttrs">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#146-159" title="Go to source code">setAttrs</a>( <span>Array <var>$attrs</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set attributes list.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set attributes list.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attrs</var></dt>
+					<dd><code>Array</code><br>$attrs Attributes list in form of name=&gt;value.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setContent" id="_setContent">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setContent">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#161-169" title="Go to source code">setContent</a>( <span>String <var>$content</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets attributes content. Previous content will be overriden</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets attributes content. Previous content will be overriden</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd><code>String</code><br>$content Attribute's content</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addContent" id="_addContent">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addContent">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#171-179" title="Go to source code">addContent</a>( <span>String <var>$content</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add content to the current content</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add content to the current content</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd><code>String</code><br>$content Content to add</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addChildTag" id="_addChildTag">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addChildTag">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#181-189" title="Go to source code">addChildTag</a>( <span><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code> <var>$tag</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Renders child tag and adds resulting string to existing content</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Renders child tag and adds resulting string to existing content</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tag</var></dt>
+					<dd><code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br>$tag Child tag</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-KsHtml.Tag.html">KsHtml\Tag</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOpenTag" id="_getOpenTag">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOpenTag">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#213-225" title="Go to source code">getOpenTag</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns tag's open part with attributes.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns tag's open part with attributes.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Tag's open part with attributes<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getContent" id="_getContent">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getContent">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#227-242" title="Go to source code">getContent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns tag's content</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns tag's content</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Tag's content, escaped or not depending of whether disableEncodeContent() method
+was called<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClosingTag" id="_getClosingTag">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClosingTag">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#244-250" title="Go to source code">getClosingTag</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns tag's closing part or empty string if there are no closing part</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns tag's closing part or empty string if there are no closing part</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Tag's closing part or empty string if there are no closing part<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-KsHtml.Tag.html#252-264" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Renders the tag</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Renders the tag</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Rendered tag<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="name" id="$name">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-KsHtml.Tag.html#10-15" title="Go to source code"><var>$name</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$name" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The name of the tag. For example, form for &lt;form&gt; tag or video for
+&lt;video&gt; tag</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The name of the tag. For example, form for &lt;form&gt; tag or video for
+&lt;video&gt; tag</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="classes" id="$classes">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-KsHtml.Tag.html#17-21" title="Go to source code"><var>$classes</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$classes" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>List of css classes</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>List of css classes</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="attrs" id="$attrs">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-KsHtml.Tag.html#23-27" title="Go to source code"><var>$attrs</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$attrs" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>List of tag attributes in form of name=&gt;value</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>List of tag attributes in form of name=&gt;value</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="content" id="$content">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-KsHtml.Tag.html#29-34" title="Go to source code"><var>$content</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$content" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Tag content. For example, label "link" in tag <a
+href="http://www.site.com">link</a></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Tag content. For example, label "link" in tag <a
+href="http://www.site.com">link</a></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasClosingTag" id="$hasClosingTag">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-KsHtml.Tag.html#36-42" title="Go to source code"><var>$hasClosingTag</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$hasClosingTag" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>True, if tag has closing tag: &lt;a&gt;, &lt;form&gt;, &lt;div&gt;, etc.
+False, if there are no closing tag: &lt;img /&gt;,<br />
+, &lt;hr /&gt; etc.)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>True, if tag has closing tag: &lt;a&gt;, &lt;form&gt;, &lt;div&gt;, etc.
+False, if there are no closing tag: &lt;img /&gt;,<br />
+, &lt;hr /&gt; etc.)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeContent" id="$encodeContent">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-KsHtml.Tag.html#44-49" title="Go to source code"><var>$encodeContent</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$encodeContent" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>If true, then html special chars in content of tag will be replaced for its
+html entities during tag renering. Default is true.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>If true, then html special chars in content of tag will be replaced for its
+html entities during tag renering. Default is true.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		kshtml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

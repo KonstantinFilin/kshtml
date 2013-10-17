@@ -9,47 +9,47 @@ class Tag {
 
     /**
      *
-     * @var string The name of the tag. For example, form for <form> tag or 
+     * @var string The name of the tag. For example, form for <form> tag or
      * video for <video> tag
      */
     protected $name;
-    
+
     /**
      *
      * @var array List of css classes
      */
     protected $classes;
-    
+
     /**
      *
      * @var array List of tag attributes in form of name=>value
      */
     protected $attrs;
-    
+
     /**
      *
-     * @var string Tag content. For example, label "link" in tag 
+     * @var string Tag content. For example, label "link" in tag
      * <a href="http://www.site.com">link</a>
      */
     protected $content;
-    
+
     /**
      *
-     * @var boolean True, if tag is in full form (has closing tag: 
-     * <a>, <form>, <div>, etc.). False, if there are no closing tag: <img />, 
+     * @var boolean True, if tag has closing tag:
+     * <a>, <form>, <div>, etc. False, if there are no closing tag: <img />,
      * <br />, <hr /> etc.)
      */
     protected $hasClosingTag;
-    
+
     /**
      *
-     * @var boolean If true, then html special chars in content of tag will be 
+     * @var boolean If true, then html special chars in content of tag will be
      * replaced for its html entities during tag renering. Default is true.
      */
     protected $encodeContent;
 
     /**
-     * 
+     *
      * @param string $name Name of the tag
      * @param boolean $hasClosingTag If it needs closing tag. Default to false
      */
@@ -60,7 +60,7 @@ class Tag {
         $this->content = "";
         $this->encodeContent = true;
     }
-    
+
     /**
      * Adds a css class name to the class attribute
      * @param string $cls New css class name
@@ -70,11 +70,11 @@ class Tag {
         if($this->classes && in_array($cls, $this->classes)) {
             return $this;
         }
-        
+
         $this->classes[] = $cls;
         return $this;
     }
-    
+
     /**
      * Removes a css class name to the class attribute
      * @param string $cls Css class name to remove
@@ -82,37 +82,41 @@ class Tag {
      */
     public function removeClass($cls) {
         $key = array_search($cls, $this->classes);
-        
+
         if($key !== false) {
             unset($this->classes[$key]);
         }
-        
+
         return $this;
     }
 
     /**
-     * Disable replacement of special chars to its html entities. Needed 
+     * Disable replacement of special chars to its html entities. Needed
      * when child tags used in content or when was made earlier
-     * @return HtmlTag
+     * @return \KsHtml\Tag
      */
     public function disableEncodeContent() {
         $this->encodeContent = false;
         return $this;
     }
-    
+
+    /**
+     *
+     * @return \KsHtml\Tag
+     */
     public function disableValueEncoding()
     {
         return $this->disableEncodeContent();
     }
 
     /**
-     * Sets attribute to the tag. If attribute exists its value 
-     * will be overriden. If value is null, then only attribute's 
+     * Sets attribute to the tag. If attribute exists its value
+     * will be overriden. If value is null, then only attribute's
      * name will be printed ("readonly" instead of 'readonly="true"'
      * @param String $name Attribute's name, for example: "src"
-     * @param String $value Attribute's value, for example: 
+     * @param String $value Attribute's value, for example:
      * "http://www.google.com/". Default value is null
-     * @return HtmlTag
+     * @return \KsHtml\Tag
      */
     public function setAttr($name, $value=null) {
         $this->attrs[$name] = $value;
@@ -122,13 +126,13 @@ class Tag {
     /**
      * Returns chosen attribute's value
      * @param string $name Attribute's name
-     * @return string|null Attribute's value or null if there are no 
+     * @return string|null Attribute's value or null if there are no
      * such an attribute
      */
     public function getAttr($name) {
         return isset($this->attrs[$name]) ? $this->attrs[$name] : null;
     }
-    
+
     /**
      * Removes attribute from the tag
      * @param string $name Attribute's name
@@ -140,9 +144,9 @@ class Tag {
     }
 
     /**
-     * Set attributes list. 
+     * Set attributes list.
      * @param Array $attrs Attributes list in form of name=>value.
-     * @return HtmlTag
+     * @return \KsHtml\Tag
      */
     public function setAttrs($attrs) {
         if ($attrs) {
@@ -157,7 +161,7 @@ class Tag {
     /**
      * Sets attributes content. Previous content will be overriden
      * @param String $content Attribute's content
-     * @return HtmlTag
+     * @return \KsHtml\Tag
      */
     public function setContent($content) {
         $this->content = $content;
@@ -167,7 +171,7 @@ class Tag {
     /**
      * Add content to the current content
      * @param String $content Content to add
-     * @return HtmlTag
+     * @return \KsHtml\Tag
      */
     public function addContent($content) {
         $this->content .= $content;
@@ -176,8 +180,8 @@ class Tag {
 
     /**
      * Renders child tag and adds resulting string to existing content
-     * @param HtmlTag $tag Child tag
-     * @return HtmlTag
+     * @param \KsHtml\Tag $tag Child tag
+     * @return \KsHtml\Tag
      */
     public function addChildTag(\KsHtml\Tag $tag) {
         $this->content .= $tag->__toString();
@@ -186,13 +190,13 @@ class Tag {
 
     /**
      * Renders and returns a leading space and attributes string in form of
-     * [ attr1name="attr1value" attr2name="attr2value" [...]]. Attribute values 
+     * [ attr1name="attr1value" attr2name="attr2value" [...]]. Attribute values
      * are escaped
      * @return string Resulting string
      */
     private function getAttributesString() {
         $ret = "";
-        
+
         if($this->classes) {
             $this->setAttr("class", implode(" ", $this->classes));
         }
@@ -207,8 +211,8 @@ class Tag {
     }
 
     /**
-     * Returns tag's open part with attributes. 
-     * @return type Tag's open part with attributes
+     * Returns tag's open part with attributes.
+     * @return string Tag's open part with attributes
      */
     public function getOpenTag() {
         $ret = "<" . $this->name . $this->getAttributesString();
@@ -222,7 +226,7 @@ class Tag {
 
     /**
      * Returns tag's content
-     * @return string Tag's content, escaped or not depending of whether  
+     * @return string Tag's content, escaped or not depending of whether
      * disableEncodeContent() method was called
      */
     public function getContent() {
@@ -239,7 +243,7 @@ class Tag {
 
     /**
      * Returns tag's closing part or empty string if there are no closing part
-     * @return type Tag's closing part or empty string if there are no closing part
+     * @return string Tag's closing part or empty string if there are no closing part
      */
     public function getClosingTag() {
         return $this->hasClosingTag ? "</" . $this->name . ">" : "";
